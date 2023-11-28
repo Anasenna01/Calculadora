@@ -1,5 +1,4 @@
 # Calculadora
- Calculadora feita com HTML, CSS e JS, tendo base de inspiração a calculadora do windows.
 # 📝 Descrição
 
 Uma calculadora desenvolvida em HTML, CSS e JavaScript com boas práticas de codificação. Este projeto incorpora técnicas com Flexbox e Grid para um layout responsivo e esteticamente agradável. Além disso, a implementação de Programação Orientada a Objetos (POO) eleva a estrutura do código de organização e eficiência. Surpreenda-se com a interatividade proporcionada pelo uso do DOM para capturar eventos HTML no JavaScript.
