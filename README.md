@@ -11,16 +11,22 @@ As principais tecnologias, ferramentas e bibliotecas que você usou no seu proje
 - CSS: Para estilizar a página com cores, responsividade, fontes, bordas, margens, alinhamentos e efeitos;
 - JavaScript: Usabilidade do DOM para captação de eventos.
 
-# ✒️ Autores
-
-> Desenvolvedora - Trabalho Inicial - [Ana Senna] Dev - Documentação - [Ana Senna]
-> 
-
-# 📄 Licença
-
-[LICENSE.txt](https://github.com/Anasenna01/Calculadora/files/13481057/LICENSE.txt)
-
 # 😎 Veja como o projeto ficou:
 
 > Desktop
 ![calculadora-desktop](https://github.com/Anasenna01/Calculadora/assets/109535627/1d3d00d9-cc07-4fef-93a4-119d7ee9bca3)
+
+# ✒️ Autores
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Anasenna01">
+        <img src="https://github.com/Anasenna01/Portfolio/assets/109535627/e7d9318f-2280-4317-94e7-ce4dd922e76e" width="100px;" alt="Foto da Ana Senna no GitHub"/><br>
+        <sub>
+          <b>Ana Senna</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
