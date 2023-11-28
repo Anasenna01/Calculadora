@@ -23,4 +23,4 @@ As principais tecnologias, ferramentas e bibliotecas que você usou no seu proje
 # 😎 Veja como o projeto ficou:
 
 > Desktop
->
+![calculadora-desktop](https://github.com/Anasenna01/Calculadora/assets/109535627/1d3d00d9-cc07-4fef-93a4-119d7ee9bca3)
