@@ -10,10 +10,29 @@ class Calculator {
 	}
 
     addDigit(digitos){
+
+        if(digit === "." && this.currentOperationText.innerText.includes(".")) {
+			return;
+		} 
+
         this.currentOperation = digitos;
         this.updateScreen();
     }
 
+    processOperation(operation) {
+
+		//pegar valores importantes (valor atual e valor anterior)
+		let operationValue;
+		let previous = +this.previousOperationText.innerText;
+		let current = +this.currentOperationText.innerText;
+		//verificar a operação baseado no que é enviado
+		switch(operation) {
+			case "+";
+				break;
+			default;
+				return;
+		}
+    }
     updateScreen(){
         this.currentOperationText.innerText += this.currentOperation;
     }
@@ -28,7 +47,7 @@ buttons.forEach((btn) => {
 	if(+value >=0 || value === "."){ 
 		calc.addDigit(value);
 	}else {
-		console.log("Op: " + value);
+		calc.processOperation(value);
 	}
 	}) 
 	
