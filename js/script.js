@@ -20,6 +20,12 @@ class Calculator {
     }
 
     processOperation(operation) {
+		if(this.currentOperationText.innerText === "") {
+			if(this.previousOperationText.innerText !== "") {
+				this.changeOperation(operation);
+			}
+			return;
+		}
 
 		//pegar valores importantes (valor atual e valor anterior)
 		let operationValue;
@@ -69,6 +75,15 @@ class Calculator {
 			this.currentOperationText.innerText = "";
 		}
     }
+
+	changeOperation(operation){
+		const mathOperations = ["*", "/", "-", "+"]
+
+		if(!mathOperations.includes(operation)) {
+			return;
+		}
+		this.previousOperationText.innerText = this.previousOperationText.innerText.slice(0, -1) + operation;
+	}
 }
 
 const calc = new Calculator(previousOperationText, currentOperationText);
