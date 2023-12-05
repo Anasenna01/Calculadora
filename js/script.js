@@ -23,13 +23,28 @@ class Calculator {
 
 		//pegar valores importantes (valor atual e valor anterior)
 		let operationValue;
-		const previous = +this.previousOperationText.innerText;
+		const previous = +this.previousOperationText.innerText.split(" ")[0];
 		const current = +this.currentOperationText.innerText;
 		//verificar a operação baseado no que é enviado
 
 		switch(operation) {
 			case "+":
 				operationValue = previous + current;
+				this.updateScreen(operationValue, operation, current, previous);
+				break;
+
+				case "-":
+				operationValue = previous - current;
+				this.updateScreen(operationValue, operation, current, previous);
+				break;
+
+				case "/":
+				operationValue = previous / current;
+				this.updateScreen(operationValue, operation, current, previous);
+				break;
+
+				case "*":
+				operationValue = previous * current;
 				this.updateScreen(operationValue, operation, current, previous);
 				break;
 			default:
@@ -49,6 +64,9 @@ class Calculator {
 			if(previous === 0) {
 				operationValue = current
 			}
+
+			this.previousOperationText.innerText = `${operationValue} ${operation}`;
+			this.currentOperationText.innerText = "";
 		}
     }
 }
