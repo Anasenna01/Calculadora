@@ -11,7 +11,7 @@ class Calculator {
 
     addDigit(digitos){
 
-        if(digit === "." && this.currentOperationText.innerText.includes(".")) {
+        if(digitos === "." && this.currentOperationText.innerText.includes(".")) {
 			return;
 		} 
 
@@ -74,7 +74,7 @@ class Calculator {
 const calc = new Calculator(previousOperationText, currentOperationText);
 
 buttons.forEach((btn) => {
-	btn.addEventListnner("click",(e) =>{ 
+	btn.addEventListener("click",(e) =>{ 
 	const value = e.target.innerText;
 	
 	if(+value >=0 || value === "."){ 
@@ -82,6 +82,6 @@ buttons.forEach((btn) => {
 	}else {
 		calc.processOperation(value);
 	}
-	}) 
+	}); 
 	
-})
+});
