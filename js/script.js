@@ -6,7 +6,7 @@ class Calculator {
 	constructor(previousOperationText, currentOperationText){
         this.previousOperationText = previousOperationText;
         this.currentOperationText = currentOperationText;
-        this.currentOperations = "";
+        this.currentOperation = "";
 	}
 
     addDigit(digitos){
@@ -68,7 +68,7 @@ class Calculator {
 			this.currentOperationText.innerText += this.currentOperation;
 		} else{
 			if(previous === 0) {
-				operationValue = current
+				operationValue = current;
 			}
 
 			this.previousOperationText.innerText = `${operationValue} ${operation}`;
@@ -77,7 +77,7 @@ class Calculator {
     }
 
 	changeOperation(operation){
-		const mathOperations = ["*", "/", "-", "+"]
+		const mathOperations = ["*", "/", "-", "+"];
 
 		if(!mathOperations.includes(operation)) {
 			return;
