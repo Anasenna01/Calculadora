@@ -27,34 +27,38 @@ class Calculator {
 			return;
 		}
 
-		//pegar valores importantes (valor atual e valor anterior)
-		let operationValue;
-		const previous = +this.previousOperationText.innerText.split(" ")[0];
-		const current = +this.currentOperationText.innerText;
-		//verificar a operação baseado no que é enviado
+	//pegar valores importantes (valor atual e valor anterior)
+	let operationValue;
+	const previous = +this.previousOperationText.innerText.split(" ")[0];
+	const current = +this.currentOperationText.innerText;
+	//verificar a operação baseado no que é enviado
 
-		switch(operation) {
-			case "+":
-				operationValue = previous + current;
-				this.updateScreen(operationValue, operation, current, previous);
-				break;
+	switch(operation) {
+		case "+":
+			operationValue = previous + current;
+			this.updateScreen(operationValue, operation, current, previous);
+			break;
 
-				case "-":
-				operationValue = previous - current;
-				this.updateScreen(operationValue, operation, current, previous);
-				break;
+		case "-":
+			operationValue = previous - current;
+			this.updateScreen(operationValue, operation, current, previous);
+			break;
 
-				case "/":
-				operationValue = previous / current;
-				this.updateScreen(operationValue, operation, current, previous);
-				break;
+		case "/":
+			operationValue = previous / current;
+			this.updateScreen(operationValue, operation, current, previous);
+			break;
 
-				case "*":
-				operationValue = previous * current;
-				this.updateScreen(operationValue, operation, current, previous);
-				break;
-			default:
-				return;
+		case "*":
+			operationValue = previous * current;
+			this.updateScreen(operationValue, operation, current, previous);
+			break;
+
+		case "DEL":
+			this.processDelOperator();
+			break;	
+		default:
+			return;
 		}
     }
     updateScreen(
@@ -83,6 +87,10 @@ class Calculator {
 			return;
 		}
 		this.previousOperationText.innerText = this.previousOperationText.innerText.slice(0, -1) + operation;
+	}
+	//deletar os digitos
+	processDelOperator(){
+		this.currentOperationText.innerText = this.currentOperationText.innerText.slice(0, -1);
 	}
 }
 
