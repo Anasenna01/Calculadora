@@ -22,7 +22,7 @@ As principais tecnologias, ferramentas e bibliotecas que eu usei no projeto.
   <tr>
     <td align="center">
       <a href="https://github.com/Anasenna01">
-        <img src="https://github.com/Anasenna01/Portfolio/assets/109535627/e7d9318f-2280-4317-94e7-ce4dd922e76e" width="100px;" alt="Foto da Ana Senna no GitHub"/><br>
+        <img src="![avatar_user](https://github.com/Anasenna01/Calculadora/assets/109535627/158b8add-9e1f-47b9-bd7e-4431f6a644db)" width="100px;" alt="Foto da Ana Senna no GitHub"/><br>
         <sub>
           <b>Ana Senna</b>
         </sub>
